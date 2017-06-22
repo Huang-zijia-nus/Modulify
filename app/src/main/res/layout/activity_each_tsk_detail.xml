@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.celia.modulifytest.AddNew"
+    android:orientation="vertical"
+    android:background="#FCFCFC">
+    <LinearLayout android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/in_each_tsk_detail_back_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="return"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="Task"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/delete_tsk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="#00000000"
+            android:text="delete"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/each_tsk_days_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="0.7"
+            android:text="33"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.4"
+            android:src="@drawable/ic_arrow_downward_black1_24dp" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/each_tsk_module_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Module"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/each_tsk_enter_mod_code"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="code_here"
+        android:textColor="#636363"
+        android:textSize="18dp"/>
+    <TextView android:id="@+id/each_tsk_task_type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Task"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/each_tsk_task_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="task type here"
+        android:textColor="#636363"
+        android:textSize="18dp"/>
+    <TextView android:id="@+id/each_tsk_ddl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Deadline"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/each_tsk_date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="YYYY"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#636363"/>
+    <TextView android:id="@+id/each_tsk_diff_level"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Difficulty Level"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"/>
+    <TextView android:id="@+id/each_tsk_select_diff_level"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:text="diff level here"
+        android:textColor="#636363"
+        android:textSize="18dp"/>
+    <TextView android:id="@+id/delete_successful"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="Delete Successful"
+        android:gravity="center"
+        android:visibility="invisible"/>
+
+</LinearLayout>

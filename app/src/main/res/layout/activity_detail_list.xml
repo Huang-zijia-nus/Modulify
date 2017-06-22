@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.celia.modulifytest.DetailList"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/detail_list_return_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="return"
+            android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/in_detail_list_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="Task"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No task has been added here, please return to module list"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <ListView android:id="@+id/detail_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

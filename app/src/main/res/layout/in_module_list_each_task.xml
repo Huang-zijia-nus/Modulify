@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check_black_24dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <TextView android:id="@+id/in_module_list_each_tsk_type"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="0dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="11dp"
+               android:text="task type"
+               android:textSize="17dp"
+               android:textColor="#000000"/>
+            <TextView android:id="@+id/in_module_list_each_tsk_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="DD"
+                android:textSize="16dp"
+                android:textColor="#A1A1A1"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/in_module_list_each_tsk_days_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.17"
+            android:text="33"
+            android:textAlignment="textEnd"
+            android:textColor="#CD0000"
+            android:textSize="23dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_downward_black_24dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
